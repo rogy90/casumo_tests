@@ -17,22 +17,31 @@ Run the following command to initialize Playwright with TypeScript:
     ```
     Select TypeScript when prompted.
 
-4. Additional - Install Docker
+4. Clone the Repository
+In Visual Studio Code, open the terminal and run:
+    ```console
+   git clone https://github.com/rogy90/casumo_tests.git
+    ```
+    ```console
+    cd casumo_tests
+    ```
+
+5.  Install Docker
 Download and install Docker from docker.com.
 
-5. Run Devowelizer Service
+6. Run Devowelizer Service
 Make sure Docker is running.
 In the terminal, run:
 
     ```console
     docker run -p 8080:8080 -it casumo/devowelizer:latest
     ```
-6. Run Tests
+7. Run Tests
 In the terminal, run:
      ```console
     npm run test
     ```
-7. View Test Report
+8. View Test Report
 To see the test report, run:
     ```console
     npm run show-report
